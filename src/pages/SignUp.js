@@ -5,7 +5,7 @@ import Illustration from '../component/Illustration';
 import InputText from '../component/InputText';
 import classes from '../styles/SignUp.module.css';
 import Button from '../component/Button';
-import Info from '../component/Info';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
     return (
@@ -36,8 +36,12 @@ const SignUp = () => {
               text="I agree to the Terms & Conditions"
             />
 
-            <Button text="Submit now" />
-            <Info />
+            <Button>
+              Submit Now
+            </Button>
+            <div className="info">
+              Already have an account? <Link to="/login">Login</Link> instead.
+            </div>
           </Form>
         </div>
       </>

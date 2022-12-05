@@ -1,11 +1,10 @@
 import React from 'react';
 
-const CheckBox = ({text, ...props}) => {
+const CheckBox = ({className, text, ...props}) => {
     return (
       <>
-        <label>
-          <input {...props} />
-          <span>{text}</span>
+        <label className={className}>
+          <input {...props} /> <span>{text}</span>
         </label>
       </>
     );
